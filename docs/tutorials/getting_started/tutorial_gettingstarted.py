@@ -58,7 +58,7 @@ outputdimr.mkdir(parents=True, exist_ok=True)
 
 dimr = DIMR()
 dimr.component.append(
-    FMComponent(name="MGB", workingDir=".", inputfile=outputdimr, model=fm)
+    FMComponent(name="MGB", workingDir=".", inputfile=fm.filepath, model=fm)
 )
 dimr.save(outputdimr)
 
